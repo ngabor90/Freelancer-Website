@@ -5,7 +5,7 @@ export const Experience = () => {
   const { experience } = t;
 
   return (
-    <section id="experience" className="py-32 relative overflow-hidden">
+    <section id="experience" className="py-28 relative overflow-hidden">
       <div
         className="absolute top-1/2 left-1/4 w-96
        h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"

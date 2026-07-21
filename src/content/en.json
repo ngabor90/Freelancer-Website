@@ -10,7 +10,7 @@
     "cta": "Get in touch"
   },
   "hero": {
-    "badge": "Fullstack Developer • Open for Work",
+    "badge": "Fullstack Web Developer • Open for Work",
     "titleLine1": "Building reliable",
     "titleLine2": "websites,",
     "titleHighlight": "with care.",
@@ -49,7 +49,7 @@
       "I currently have open capacity as a freelancer: I'm happy to take on new websites, web applications, or other development projects, either on a project basis or hourly — rates are discussed directly by message.",
       "Outside of work, I enjoy building my own projects end to end: a shopping list app, and a few websites."
     ],
-    "quote": "I love software that quietly does its job in the background, without surprises.",
+    "quote": "I enjoy building web applications that are fast, intuitive, and reliable.",
     "highlights": [
       {
         "title": "Practical backend",
@@ -71,9 +71,9 @@
   },
   "projects": {
     "eyebrow": "Featured Work",
-    "titleLine": "Projects that",
-    "titleHighlight": "solve real problems.",
-    "description": "A mix of freelance and personal projects — from a logistics platform used daily, to tools I simply built because I wanted them to exist.",
+    "titleLine": "Websites and applications ",
+    "titleHighlight": "I've built.",
+    "description": "Freelance work and personal projects.",
     "items": [
       {
         "title": "ShopList — Shopping List App",
@@ -130,8 +130,8 @@
   },
   "experience": {
     "eyebrow": "Career Path",
-    "titleLine": "Experience that",
-    "titleHighlight": "speaks for itself.",
+    "titleLine": "My ",
+    "titleHighlight": "development experience.",
     "description": "From a decade of office work to becoming a fullstack developer working with Laravel and React — here's the journey so far.",
     "items": [
       {

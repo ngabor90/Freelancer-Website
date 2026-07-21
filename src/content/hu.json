@@ -10,11 +10,11 @@
     "cta": "Kapcsolatfelvétel"
   },
   "hero": {
-    "badge": "Fullstack fejlesztő • Szabad kapacitás",
+    "badge": "Fullstack webfejlesztő • Szabad kapacitás",
     "titleLine1": "Megbízható",
     "titleLine2": "weboldalakat építek,",
     "titleHighlight": "igényesen.",
-    "subtitle": "Szia, Németh Gábor vagyok — fullstack fejlesztő, elsősorban Laravel és React háttérrel. Jelenleg szabad kapacitásom van, és szívesen vállalok weboldalakat, webalkalmazásokat HTML, CSS, JavaScript, React vagy Laravel technológiával, illetve ezeken kívül is nyitott vagyok más projektekre. Dolgozom project alapon és óradíjas konstrukcióban is, az árakról üzenetben egyeztetünk.",
+    "subtitle": "Szia, Németh Gábor vagyok — fullstack webfejlesztő, elsősorban Laravel és React háttérrel. Jelenleg szabad kapacitásom van, és szívesen vállalok weboldalakat, webalkalmazásokat HTML, CSS, JavaScript, React vagy Laravel technológiával, illetve ezeken kívül is nyitott vagyok más projektekre. Dolgozom project alapon és óradíjas konstrukcióban is, az árakról üzenetben egyeztessünk.",
     "ctaPrimary": "Kapcsolatfelvétel",
     "ctaSecondary": "Projectek megtekintése",
     "followMe": "Elérhetőségeim:",
@@ -49,7 +49,7 @@
       "Jelenleg szabad kapacitással freelancerként dolgozom: szívesen vállalok új weboldalakat, webalkalmazásokat vagy egyéb fejlesztői projekteket, akár project alapon, akár óradíjért — az árakról személyesen, üzenetben egyeztetünk.",
       "Munka mellett szívesen építek saját projekteket is elejétől a végéig: egy bevásárlólista appot, és néhány weboldalt."
     ],
-    "quote": "Azt a szoftvert szeretem, ami csendben, a háttérben elvégzi a dolgát meglepetések nélkül.",
+    "quote": "Olyan webes alkalmazásokat szeretek építeni, amelyek gyorsak, átláthatók és megbízhatóak.",
     "highlights": [
       {
         "title": "Gyakorlatias backend",
@@ -71,9 +71,9 @@
   },
   "projects": {
     "eyebrow": "Kiemelt munkák",
-    "titleLine": "Projektek, amik",
-    "titleHighlight": "valós problémát oldanak meg.",
-    "description": "Freelance és saját projektek keveréke — egy napi szinten használt logisztikai platformtól olyan eszközökig, amiket egyszerűen azért építettem meg, mert szerettem volna, hogy létezzenek.",
+    "titleLine": "Weboldalak és alkalmazások",
+    "titleHighlight": "amelyeket készítettem.",
+    "description": "Freelance munkák és saját fejlesztések",
     "items": [
       {
         "title": "ShopList — Bevásárlólista app",
@@ -130,9 +130,9 @@
   },
   "experience": {
     "eyebrow": "Szakmai út",
-    "titleLine": "Tapasztalat, ami",
-    "titleHighlight": "magáért beszél.",
-    "description": "Egy évtizednyi irodai munkától a Laravellel és Reacttel dolgozó fullstack fejlesztőig — íme az eddigi út.",
+    "titleLine": "Eddigi",
+    "titleHighlight": "fejlesztői munkáim",
+    "description": "Fullstack Webfejlesztőként az eddigi utam",
     "items": [
       {
         "period": "2024 - Jelenleg",

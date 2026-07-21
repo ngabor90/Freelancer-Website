@@ -21,7 +21,7 @@ export const Contact = () => {
     email: "",
     subject: "",
     message: "",
-    company: "", // honeypot mező — botoknak szánt csali, embereknek rejtett
+    company: "", 
   });
   const [isLoading, setIsLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({
@@ -32,7 +32,6 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Ha a rejtett mező ki van töltve, valószínűleg bot küldte — csendben eldobjuk
     if (formData.company) {
       setSubmitStatus({ type: "success", message: contact.form.success });
       setFormData({
@@ -93,7 +92,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
+    <section id="contact" className="py-28 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
