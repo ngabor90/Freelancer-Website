@@ -1,0 +1,242 @@
+{
+  "nav": {
+    "links": [
+      { "href": "#about", "label": "About" },
+      { "href": "#projects", "label": "Projects" },
+      { "href": "#experience", "label": "Experience" },
+      { "href": "#testimonials", "label": "Testimonials" },
+      { "href": "#contact", "label": "Contact" }
+    ],
+    "cta": "Get in touch"
+  },
+  "hero": {
+    "badge": "Fullstack Developer • Open for Work",
+    "titleLine1": "Building reliable",
+    "titleLine2": "websites,",
+    "titleHighlight": "with care.",
+    "subtitle": "Hi, I'm Gábor Németh — a fullstack developer working mainly with Laravel and React. I currently have open capacity and I'm happy to take on websites and web applications in HTML, CSS, JavaScript, React, or Laravel, as well as other kinds of projects. I work on both a project and hourly basis, with rates discussed by message.",
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "View my projects",
+    "followMe": "Find me on:",
+    "experienceLabel": "years of experience freelancing",
+    "experienceValue": "2+",
+    "availableBadge": "Currently available",
+    "skillsLabel": "Technologies I work with",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "Laravel",
+      "React",
+      "Inertia.js",
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST API",
+      "Git"
+    ]
+  },
+  "about": {
+    "eyebrow": "About Me",
+    "titleLine": "I started developing in 2022,",
+    "titleHighlight": "and I've been learning and building projects ever since.",
+    "paragraphs": [
+      "I studied frontend and later fullstack development at Ruander Educational Center, alongside Udemy courses — and by the end, web development had become a real passion.",
+      "Since then I've worked on freelance projects, built a real-time 3D manufacturing monitoring system for Robert Bosch, and worked on Packli, a Hungarian parcel logistics platform — first as an employee, and now I continue that work on a freelance basis. It's the project I'm proudest of: leading the webshop integration work and building an invoice cost-verification feature from scratch.",
+      "I currently have open capacity as a freelancer: I'm happy to take on new websites, web applications, or other development projects, either on a project basis or hourly — rates are discussed directly by message.",
+      "Outside of work, I enjoy building my own projects end to end: a shopping list app, and a few websites."
+    ],
+    "quote": "I love software that quietly does its job in the background, without surprises.",
+    "highlights": [
+      {
+        "title": "Practical backend",
+        "description": "Laravel APIs that handle real, everyday load — not just demo data."
+      },
+      {
+        "title": "Clean interfaces",
+        "description": "React and custom-built frontends that stay out of the user's way and just work."
+      },
+      {
+        "title": "Client communication",
+        "description": "Years of freelancing taught me how to explain decisions clearly."
+      },
+      {
+        "title": "Continuous learning",
+        "description": "Still learning as a developer, always curious about new tools."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Featured Work",
+    "titleLine": "Projects that",
+    "titleHighlight": "solve real problems.",
+    "description": "A mix of freelance and personal projects — from a logistics platform used daily, to tools I simply built because I wanted them to exist.",
+    "items": [
+      {
+        "title": "ShopList — Shopping List App",
+        "description": "A full-stack shopping list application with a Laravel REST API backend and React frontend, featuring authentication, email confirmation, and drag-and-drop list reordering. Live in production at shoplist.hu.",
+        "tags": ["Laravel", "React", "MySQL", "Sanctum"],
+        "image": "/projects/shoplist.jpg",
+        "liveUrl": "https://shoplist.hu/",
+        "githubUrl": "https://github.com/ngabor90/Shopping-List"
+      },
+      {
+        "title": "Cigar Rating Site",
+        "description": "A cigar review website built in PHP, using CSV-based data storage.",
+        "tags": ["PHP", "HTML5", "CSS3"],
+        "image": "/projects/phpszivar.jpg",
+        "liveUrl": "http://szivarpontozo.infinityfreeapp.com/",
+        "githubUrl": "https://github.com/ngabor90/Szivarpontozo_PHP"
+      },
+      {
+        "title": "Lash — Lash Stylist Website",
+        "description": "A showcase website for lash stylists, built with the Bootstrap framework.",
+        "tags": ["HTML5", "CSS3", "Bootstrap"],
+        "image": "/projects/lash.jpg",
+        "liveUrl": "https://lashproject01.netlify.app/",
+        "githubUrl": "https://github.com/ngabor90/Lash"
+      },
+      {
+        "title": "React-Tailwind Business Website",
+        "description": "A React + Vite business landing page styled with Tailwind CSS.",
+        "tags": ["React", "Vite", "Tailwind CSS"],
+        "image": "/projects/reactbusiness.jpg",
+        "liveUrl": "https://reactbusinessweb.netlify.app/",
+        "githubUrl": "https://github.com/ngabor90/BusinessReact"
+      },
+      {
+        "title": "50 Shades of the Room",
+        "description": "A home renovation business website, available in Hungarian and Spanish.",
+        "tags": ["HTML5", "CSS3", "JavaScript", "PHP"],
+        "image": "/projects/50arnyalat.jpg",
+        "liveUrl": "https://50arnyalat.hu/",
+        "githubUrl": "https://github.com/ngabor90/A_szoba_50_arnyalata"
+      },
+      {
+        "title": "Outlaw Band Website",
+        "description": "The official website for my own blues-rock band, Outlaw.",
+        "tags": ["HTML5", "CSS3", "JavaScript"],
+        "image": "/projects/outlaw.jpg",
+        "liveUrl": "https://outlaw.hu",
+        "githubUrl": "https://github.com/ngabor90/OutlawZenekar"
+      }
+    ],
+    "contactMe": "Get in touch with me",
+    "liveLabel": "Website",
+    "codeLabel": "Code"
+  },
+  "experience": {
+    "eyebrow": "Career Path",
+    "titleLine": "Experience that",
+    "titleHighlight": "speaks for itself.",
+    "description": "From a decade of office work to becoming a fullstack developer working with Laravel and React — here's the journey so far.",
+    "items": [
+      {
+        "period": "2024 - Present",
+        "role": "Freelance Web Developer",
+        "company": "Self-employed",
+        "description": "Actively taking on websites and web applications (HTML, CSS, JavaScript, React, Laravel) on a project or hourly basis for friends and clients, including a bilingual home renovation business site and a lash stylist website, alongside personal projects such as ShopList.hu.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "MySQL",
+          "React",
+          "Laravel"
+        ],
+        "current": true
+      },
+      {
+        "period": "2025 — Present",
+        "role": "Fullstack Developer (freelance)",
+        "company": "Avorado Kft. — Packli.hu",
+        "description": "Working on a Hungarian parcel logistics SaaS platform, integrating courier services (MPL, DPD, GLS, FoxPost, Packeta) and webshop systems (Shopify, Shoprenter, UNAS, WooCommerce). Led the webshop integration work and built an invoice cost-verification feature — this work now continues on a freelance basis.",
+        "technologies": ["Laravel", "React"],
+        "current": true
+      },
+      {
+        "period": "2025",
+        "role": "Fullstack Developer",
+        "company": "Robert Bosch Kft.",
+        "description": "Three-month project building a real-time 3D manufacturing monitoring system visualizing 100+ machines on the factory floor.",
+        "technologies": ["Laravel", "React"],
+        "current": false
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "titleLine": "What others",
+    "titleHighlight": "say about me.",
+    "items": [
+      {
+        "quote": "It was great working with Gábor — he always responded quickly to requests and paid attention to even the smallest details. The end result exceeded all our expectations.",
+        "author": "Péter Kovács",
+        "avatar": "https://ui-avatars.com/api/?name=Peter+Kovacs&background=20b2a6&color=fff&size=200"
+      },
+      {
+        "quote": "Working together went smoothly from start to finish. Gábor was technically skilled and also explained the options clearly, always finding a practical solution to any problem.",
+        "author": "Tamás Nagy",
+        "avatar": "https://ui-avatars.com/api/?name=Tamas+Nagy&background=20b2a6&color=fff&size=200"
+      },
+      {
+        "quote": "We're very happy with Gábor's work. The website was delivered on time, and it turned out modern, fast, and easy to use. We'll definitely work with him again on future developments.",
+        "author": "Anna Szabó",
+        "avatar": "https://ui-avatars.com/api/?name=Anna+Szabo&background=20b2a6&color=fff&size=200"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get in Touch",
+    "titleLine": "Let's build",
+    "titleHighlight": "something great.",
+    "description": "Have a website or web application that needs to be built or improved? I currently have open capacity and I'm happy to work on a project or hourly basis — send a message and let's talk about the details!",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name...",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! I'll get back to you soon.",
+      "error": "Failed to send message. Please try again later."
+    },
+    "infoTitle": "Contact Info",
+    "info": [
+      {
+        "label": "Email",
+        "value": "n.gabor90@gmail.com",
+        "href": "mailto:n.gabor90@gmail.com"
+      },
+      {
+        "label": "Phone",
+        "value": "+36 30 738 5115",
+        "href": "tel:+36307385115"
+      },
+      { "label": "Location", "value": "Budapest, Hungary", "href": "#" }
+    ],
+    "availableTitle": "Currently available",
+    "availableText": "I currently have open capacity as a freelancer — I take on websites and web applications in HTML, CSS, JavaScript, React, or Laravel, as well as other kinds of projects, on either a project or hourly basis. I'm not looking for full-time employment at the moment. Rates are discussed by message."
+  },
+  "footer": {
+    "tagline": "Freelance Fullstack Developer",
+    "links": [
+      { "href": "#about", "label": "About" },
+      { "href": "#projects", "label": "Projects" },
+      { "href": "#experience", "label": "Experience" },
+      { "href": "#testimonials", "label": "Testimonials" },
+      { "href": "#contact", "label": "Contact" }
+    ]
+  },
+  "theme": {
+    "toLight": "Switch to light mode",
+    "toDark": "Switch to dark mode"
+  }
+}

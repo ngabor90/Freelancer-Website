@@ -1,0 +1,242 @@
+{
+  "nav": {
+    "links": [
+      { "href": "#about", "label": "Rólam" },
+      { "href": "#projects", "label": "Projektek" },
+      { "href": "#experience", "label": "Tapasztalat" },
+      { "href": "#testimonials", "label": "Vélemények" },
+      { "href": "#contact", "label": "Kapcsolat" }
+    ],
+    "cta": "Kapcsolatfelvétel"
+  },
+  "hero": {
+    "badge": "Fullstack fejlesztő • Szabad kapacitás",
+    "titleLine1": "Megbízható",
+    "titleLine2": "weboldalakat építek,",
+    "titleHighlight": "igényesen.",
+    "subtitle": "Szia, Németh Gábor vagyok — fullstack fejlesztő, elsősorban Laravel és React háttérrel. Jelenleg szabad kapacitásom van, és szívesen vállalok weboldalakat, webalkalmazásokat HTML, CSS, JavaScript, React vagy Laravel technológiával, illetve ezeken kívül is nyitott vagyok más projektekre. Dolgozom project alapon és óradíjas konstrukcióban is, az árakról üzenetben egyeztetünk.",
+    "ctaPrimary": "Kapcsolatfelvétel",
+    "ctaSecondary": "Projectek megtekintése",
+    "followMe": "Elérhetőségeim:",
+    "experienceLabel": "év tapasztalat freelancerként",
+    "experienceValue": "2+",
+    "availableBadge": "Jelenleg elérhető",
+    "skillsLabel": "Technológiák, amikkel dolgozom",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "Laravel",
+      "React",
+      "Inertia.js",
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST API",
+      "Git"
+    ]
+  },
+  "about": {
+    "eyebrow": "Rólam",
+    "titleLine": "2022-ben kezdtem a fejlesztést,",
+    "titleHighlight": "azóta folyamatosan tanulok és építek különböző projecteket.",
+    "paragraphs": [
+      "A Ruander Oktatási Központban tanultam előbb frontend, majd fullstack fejlesztést, emellett Udemy kurzusokkal is készültem — és a végére valódi szenvedéllyé vált a webfejlesztés.",
+      "Azóta dolgoztam freelance projekteken, építettem egy 3D-s, valós idejű gyártásmonitorozó rendszert a Robert Boschnak, és dolgoztam a Packlin, egy magyar csomaglogisztikai platformon — előbb alkalmazottként, jelenleg pedig freelance megbízásként folytatom ott a munkát. Erre vagyok a legbüszkébb: a webshop-integrációs munka vezetésére és egy számla-költségellenőrző funkció megépítésére nulláról.",
+      "Jelenleg szabad kapacitással freelancerként dolgozom: szívesen vállalok új weboldalakat, webalkalmazásokat vagy egyéb fejlesztői projekteket, akár project alapon, akár óradíjért — az árakról személyesen, üzenetben egyeztetünk.",
+      "Munka mellett szívesen építek saját projekteket is elejétől a végéig: egy bevásárlólista appot, és néhány weboldalt."
+    ],
+    "quote": "Azt a szoftvert szeretem, ami csendben, a háttérben elvégzi a dolgát meglepetések nélkül.",
+    "highlights": [
+      {
+        "title": "Gyakorlatias backend",
+        "description": "Laravel API-k, amik valódi, napi szintű terhelést bírnak, nem csak demó adatokat."
+      },
+      {
+        "title": "Letisztult felület",
+        "description": "React és egyedi fejlesztésű frontendek, amik nem állnak a felhasználó útjába, csak működnek."
+      },
+      {
+        "title": "Ügyfélkommunikáció",
+        "description": "A freelance évek megtanítottak közérthetően elmagyarázni a döntéseket."
+      },
+      {
+        "title": "Folyamatos tanulás",
+        "description": "Fejlesztőként még mindig tanulok, kíváncsian az új eszközökre."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Kiemelt munkák",
+    "titleLine": "Projektek, amik",
+    "titleHighlight": "valós problémát oldanak meg.",
+    "description": "Freelance és saját projektek keveréke — egy napi szinten használt logisztikai platformtól olyan eszközökig, amiket egyszerűen azért építettem meg, mert szerettem volna, hogy létezzenek.",
+    "items": [
+      {
+        "title": "ShopList — Bevásárlólista app",
+        "description": "Full-stack bevásárlólista alkalmazás Laravel REST API háttérrel és React frontenddel, beléptetéssel, e-mail megerősítéssel és drag-and-drop lista-átrendezéssel. Éles környezetben fut a shoplist.hu címen.",
+        "tags": ["Laravel", "React", "MySQL", "Sanctum"],
+        "image": "/projects/shoplist.jpg",
+        "liveUrl": "https://shoplist.hu/",
+        "githubUrl": "https://github.com/ngabor90/Shopping-List"
+      },
+      {
+        "title": "Szivarpontozó oldal",
+        "description": "Szivar-értékelő weboldal PHP-ban megírva, CSV alapú adattárolással.",
+        "tags": ["PHP", "HTML5", "CSS3"],
+        "image": "/projects/phpszivar.jpg",
+        "liveUrl": "http://szivarpontozo.infinityfreeapp.com/",
+        "githubUrl": "https://github.com/ngabor90/Szivarpontozo_PHP"
+      },
+      {
+        "title": "Lash — Szempilla stylist oldal",
+        "description": "Bemutatkozó oldal szempilla stylistoknak, Bootstrap keretrendszerrel építve.",
+        "tags": ["HTML5", "CSS3", "Bootstrap"],
+        "image": "/projects/lash.jpg",
+        "liveUrl": "https://lashproject01.netlify.app/",
+        "githubUrl": "https://github.com/ngabor90/Lash"
+      },
+      {
+        "title": "React-Tailwind Business Website",
+        "description": "React + Vite alapú vállalati bemutatkozó oldal, Tailwind CSS-el stílusozva.",
+        "tags": ["React", "Vite", "Tailwind CSS"],
+        "image": "/projects/reactbusiness.jpg",
+        "liveUrl": "https://reactbusinessweb.netlify.app/",
+        "githubUrl": "https://github.com/ngabor90/BusinessReact"
+      },
+      {
+        "title": "A szoba 50 árnyalata",
+        "description": "Lakásfelújítással foglalkozó vállalkozói weboldal, magyar és spanyol nyelven.",
+        "tags": ["HTML5", "CSS3", "JavaScript", "PHP"],
+        "image": "/projects/50arnyalat.jpg",
+        "liveUrl": "https://50arnyalat.hu/",
+        "githubUrl": "https://github.com/ngabor90/A_szoba_50_arnyalata"
+      },
+      {
+        "title": "Outlaw Zenekar Honlapja",
+        "description": "A saját blues-rock zenekarom, az Outlaw hivatalos weboldala.",
+        "tags": ["HTML5", "CSS3", "JavaScript"],
+        "image": "/projects/outlaw.jpg",
+        "liveUrl": "https://outlaw.hu",
+        "githubUrl": "https://github.com/ngabor90/OutlawZenekar"
+      }
+    ],
+    "contactMe": "Vedd fel a kapcsolatot velem",
+    "liveLabel": "Honlap",
+    "codeLabel": "Kód"
+  },
+  "experience": {
+    "eyebrow": "Szakmai út",
+    "titleLine": "Tapasztalat, ami",
+    "titleHighlight": "magáért beszél.",
+    "description": "Egy évtizednyi irodai munkától a Laravellel és Reacttel dolgozó fullstack fejlesztőig — íme az eddigi út.",
+    "items": [
+      {
+        "period": "2024 - Jelenleg",
+        "role": "Freelance webfejlesztő",
+        "company": "Egyéni vállalkozó",
+        "description": "Jelenleg is aktívan vállalok weboldalakat és webalkalmazásokat (HTML, CSS, JavaScript, React, Laravel) project vagy óradíj alapon, barátoknak és ügyfeleknek — köztük egy kétnyelvű felújítási vállalkozói oldalt, szempilla oldalt, emellett saját projekteket, mint pl.: ShopList.hu",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "MySQL",
+          "React",
+          "Laravel"
+        ],
+        "current": true
+      },
+      {
+        "period": "2025 — Jelenleg",
+        "role": "Fullstack fejlesztő (freelance)",
+        "company": "Avorado Kft. — Packli.hu",
+        "description": "Magyar csomaglogisztikai SaaS platformon dolgozom, futárszolgáltatók (MPL, DPD, GLS, FoxPost, Packeta) és webshop-rendszerek (Shopify, Shoprenter, UNAS, WooCommerce) integrálásával. Vezettem a webshop-integrációs munkát, és megépítettem egy számla-költségellenőrző funkciót — a munka jelenleg freelance megbízásként folytatódik.",
+        "technologies": ["Laravel", "React"],
+        "current": true
+      },
+      {
+        "period": "2025",
+        "role": "Fullstack fejlesztő",
+        "company": "Robert Bosch Kft.",
+        "description": "Háromhónapos projekt: valós idejű, 3D-s gyártásmonitorozó rendszer építése, ami 100+ gépet vizualizál a gyártócsarnokban.",
+        "technologies": ["Laravel", "React"],
+        "current": false
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Vélemények",
+    "titleLine": "Amit mások",
+    "titleHighlight": "mondanak rólam.",
+    "items": [
+      {
+        "quote": "Gáborral nagyon jó volt együtt dolgozni, mert mindig gyorsan reagált a felmerülő kérésekre, és a legapróbb részletekre is odafigyelt. A végeredmény minden elvárásunkat felülmúlta.",
+        "author": "Kovács Péter",
+        "avatar": "https://ui-avatars.com/api/?name=Kovacs+Peter&background=20b2a6&color=fff&size=200"
+      },
+      {
+        "quote": "A közös munka végig gördülékenyen zajlott. Gábor nemcsak technikailag volt felkészült, hanem érthetően elmagyarázta a lehetőségeket, és mindig talált praktikus megoldást a problémákra.",
+        "author": "Nagy Tamás",
+        "avatar": "https://ui-avatars.com/api/?name=Nagy+Tamas&background=20b2a6&color=fff&size=200"
+      },
+      {
+        "quote": "Nagyon elégedettek vagyunk Gábor munkájával. Határidőre elkészült a weboldal, modern, gyors és könnyen használható lett. Biztosan vele dolgozunk a jövőbeli fejlesztéseknél is.",
+        "author": "Szabó Anna",
+        "avatar": "https://ui-avatars.com/api/?name=Szabo+Anna&background=20b2a6&color=fff&size=200"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Vegyük fel a kapcsolatot",
+    "titleLine": "Építsünk együtt",
+    "titleHighlight": "valami jót.",
+    "description": "Van egy weboldalad vagy webalkalmazásod, amit meg kéne építeni vagy fejleszteni? Szabad kapacitásom van, szívesen dolgozom project alapon vagy óradíjért — írj üzenetet, és beszéljünk a részletekről!",
+    "form": {
+      "name": "Név",
+      "namePlaceholder": "A neved...",
+      "email": "E-mail",
+      "emailPlaceholder": "sajat@email.hu",
+      "subject": "Tárgy",
+      "subjectPlaceholder": "Miről szeretnél írni?",
+      "message": "Üzenet",
+      "messagePlaceholder": "Az üzeneted...",
+      "send": "Üzenet küldése",
+      "sending": "Küldés...",
+      "success": "Az üzenet sikeresen elküldve! Hamarosan jelentkezem.",
+      "error": "Az üzenet küldése sikertelen. Kérlek, próbáld újra később."
+    },
+    "infoTitle": "Elérhetőségek",
+    "info": [
+      {
+        "label": "E-mail",
+        "value": "n.gabor90@gmail.com",
+        "href": "mailto:n.gabor90@gmail.com"
+      },
+      {
+        "label": "Telefon",
+        "value": "+36 30 738 5115",
+        "href": "tel:+36307385115"
+      },
+      { "label": "Helyszín", "value": "Budapest, Magyarország", "href": "#" }
+    ],
+    "availableTitle": "Jelenleg elérhető",
+    "availableText": "Jelenleg szabad kapacitással rendelkezem freelancerként — vállalok weboldalakat, webalkalmazásokat HTML, CSS, JavaScript, React vagy Laravel technológiával, illetve ezeken kívül is nyitott vagyok más típusú projektekre. Dolgozom project alapon és óradíjas konstrukcióban is, teljes állású elhelyezkedést jelenleg nem keresek. Az árakról üzenetben egyeztetünk."
+  },
+  "footer": {
+    "tagline": "Freelancer Fullstack fejlesztő",
+    "links": [
+      { "href": "#about", "label": "Rólam" },
+      { "href": "#projects", "label": "Projektek" },
+      { "href": "#experience", "label": "Tapasztalat" },
+      { "href": "#testimonials", "label": "Vélemények" },
+      { "href": "#contact", "label": "Kapcsolat" }
+    ]
+  },
+  "theme": {
+    "toLight": "Váltás világos módra",
+    "toDark": "Váltás sötét módra"
+  }
+}
