@@ -57,6 +57,7 @@
   --color-highlight: var(--color-highlight);
   --color-surface: var(--color-surface);
   --radius: 0.75rem;
+  --font-serif: "Source Serif 4", serif;
 }
 
 @layer base {
@@ -78,7 +79,7 @@
   }
 
   .font-serif {
-    font-family: "Playfair Display", serif;
+    font-weight: 300;
   }
 }
 
@@ -197,6 +198,10 @@
     100% {
       stroke-dashoffset: -550;
     }
+  }
+
+  .animated-border-path {
+    animation: animated-border 6s linear infinite;
   }
 
   .group:hover .animated-border-path {

@@ -49,7 +49,7 @@
       "I currently have open capacity as a freelancer: I'm happy to take on new websites, web applications, or other development projects, either on a project basis or hourly — rates are discussed directly by message.",
       "Outside of work, I enjoy building my own projects end to end: a shopping list app, and a few websites."
     ],
-    "quote": "I enjoy building web applications that are fast, intuitive, and reliable.",
+    "quote": "I enjoy building web applications that are fast, transparent, and reliable.",
     "highlights": [
       {
         "title": "Practical backend",
@@ -131,8 +131,8 @@
   "experience": {
     "eyebrow": "Career Path",
     "titleLine": "My ",
-    "titleHighlight": "development experience.",
-    "description": "From a decade of office work to becoming a fullstack developer working with Laravel and React — here's the journey so far.",
+    "titleHighlight": "development experience",
+    "description": "My journey so far as a Fullstack Web Developer.",
     "items": [
       {
         "period": "2024 - Present",
@@ -161,7 +161,7 @@
         "period": "2025",
         "role": "Fullstack Developer",
         "company": "Robert Bosch Kft.",
-        "description": "Three-month project building a real-time 3D manufacturing monitoring system visualizing 100+ machines on the factory floor.",
+        "description": "Built a real-time 3D manufacturing monitoring system visualizing 100+ machines on the factory floor, including database-driven management of their associated components.",
         "technologies": ["Laravel", "React"],
         "current": false
       }

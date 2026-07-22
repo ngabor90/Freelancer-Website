@@ -161,7 +161,7 @@
         "period": "2025",
         "role": "Fullstack fejlesztő",
         "company": "Robert Bosch Kft.",
-        "description": "Háromhónapos projekt: valós idejű, 3D-s gyártásmonitorozó rendszer építése, ami 100+ gépet vizualizál a gyártócsarnokban.",
+        "description": "Valós idejű, 3D-s gyártásmonitorozó rendszer építése, ami 100+ gépet vizualizál a gyártócsarnokban és az ezekhez tartozó alkatrészeket kezeli adatbázissal.",
         "technologies": ["Laravel", "React"],
         "current": false
       }

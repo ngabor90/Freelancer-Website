@@ -34,7 +34,7 @@ export const Projects = () => {
           {projects.items.map((project, idx) => (
             <div
               key={idx}
-              className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
+              className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1 border border-transparent hover:border-2 hover:border-primary/50 transition-[border] duration-300"
               style={{ animationDelay: `${(idx + 1) * 100}ms` }}
             >
               {/* Project visual */}
