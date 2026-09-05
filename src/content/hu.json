@@ -223,7 +223,10 @@
       { "label": "Helyszín", "value": "Budapest, Magyarország", "href": "#" }
     ],
     "availableTitle": "Jelenleg elérhető",
-    "availableText": "Jelenleg szabad kapacitással rendelkezem freelancerként — vállalok weboldalakat, webalkalmazásokat HTML, CSS, JavaScript, React vagy Laravel technológiával, illetve ezeken kívül is nyitott vagyok más típusú projektekre. Dolgozom project alapon és óradíjas konstrukcióban is, teljes állású elhelyezkedést jelenleg nem keresek. Az árakról üzenetben egyeztetünk."
+    "availableText": "Jelenleg szabad kapacitással rendelkezem freelancerként — vállalok weboldalakat, webalkalmazásokat HTML, CSS, JavaScript, React vagy Laravel technológiával, illetve ezeken kívül is nyitott vagyok más típusú projektekre. Dolgozom project alapon és óradíjas konstrukcióban is, teljes állású elhelyezkedést jelenleg nem keresek. Az árakról üzenetben egyeztetünk.",
+    "bookingTitle": "Foglalj egy konzultációt",
+    "bookingText": "Inkább beszéljük élőben? Foglalj egy ingyenes 15 perces Google Meet időpontot közvetlenül a naptáramban.",
+    "bookingCta": "Időpontfoglalás"
   },
   "footer": {
     "tagline": "Freelancer Fullstack fejlesztő",

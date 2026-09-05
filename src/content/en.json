@@ -223,7 +223,10 @@
       { "label": "Location", "value": "Budapest, Hungary", "href": "#" }
     ],
     "availableTitle": "Currently available",
-    "availableText": "I currently have open capacity as a freelancer — I take on websites and web applications in HTML, CSS, JavaScript, React, or Laravel, as well as other kinds of projects, on either a project or hourly basis. I'm not looking for full-time employment at the moment. Rates are discussed by message."
+    "availableText": "I currently have open capacity as a freelancer — I take on websites and web applications in HTML, CSS, JavaScript, React, or Laravel, as well as other kinds of projects, on either a project or hourly basis. I'm not looking for full-time employment at the moment. Rates are discussed by message.",
+    "bookingTitle": "Book a Consultation",
+    "bookingText": "Prefer to talk it through? Grab a free 15-minute Google Meet slot directly on my calendar.",
+    "bookingCta": "Book a call"
   },
   "footer": {
     "tagline": "Freelance Fullstack Developer",

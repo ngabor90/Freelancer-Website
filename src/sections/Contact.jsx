@@ -10,6 +10,7 @@ import { Button } from "@/components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useLanguage } from "@/context/useLanguage";
+import { BookingWidget } from "@/components/BookingWidget";
 
 export const Contact = () => {
   const { t } = useLanguage();
@@ -21,7 +22,7 @@ export const Contact = () => {
     email: "",
     subject: "",
     message: "",
-    company: "", 
+    company: "",
   });
   const [isLoading, setIsLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({
@@ -293,6 +294,18 @@ export const Contact = () => {
                 {contact.availableText}
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="max-w-5xl mx-auto mt-12 animate-fade-in animation-delay-500">
+          <div className="glass rounded-3xl p-8 border border-primary/30">
+            <h3 className="text-xl font-semibold mb-2">
+              {contact.bookingTitle}
+            </h3>
+            <p className="text-muted-foreground text-sm mb-6">
+              {contact.bookingText}
+            </p>
+            <BookingWidget />
           </div>
         </div>
       </div>
