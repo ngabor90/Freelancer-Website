@@ -8,11 +8,13 @@ import { Testimonials } from "@/sections/Testimonials";
 import { Contact } from "@/sections/Contact";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { IntroLoader } from "@/components/IntroLoader";
 
 function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
+        <IntroLoader />
         <div className="min-h-screen overflow-x-hidden">
           <Navbar />
           <main>
