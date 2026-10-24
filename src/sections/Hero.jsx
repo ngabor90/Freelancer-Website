@@ -1,8 +1,9 @@
 import { Button } from "@/components/Button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Copy, Check } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { useLanguage } from "@/context/useLanguage";
+import { useState } from "react";
 
 const socialLinks = [
   { icon: FaGithub, href: "https://github.com/ngabor90", label: "GitHub" },
@@ -23,6 +24,15 @@ const dots = Array.from({ length: 30 }, () => ({
 export const Hero = () => {
   const { t } = useLanguage();
   const { hero } = t;
+  const [copiedEmail, setCopiedEmail] = useState(false);
+
+  const handleCopyEmail = () => {
+    if (navigator?.clipboard) {
+      navigator.clipboard.writeText("n.gabor90@gmail.com");
+      setCopiedEmail(true);
+      setTimeout(() => setCopiedEmail(false), 2000);
+    }
+  };
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -106,22 +116,47 @@ export const Hero = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+            <div className="flex flex-wrap items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">
                 {hero.followMe}
               </span>
-              {socialLinks.map((social, idx) => (
-                <a
-                  key={idx}
-                  href={social.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={social.label}
-                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+              <div className="flex items-center gap-3">
+                {socialLinks.map((social, idx) => (
+                  <a
+                    key={idx}
+                    href={social.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={social.label}
+                    className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </a>
+                ))}
+
+                <button
+                  type="button"
+                  onClick={handleCopyEmail}
+                  className={`px-3 py-1.5 rounded-full glass text-xs font-medium flex items-center gap-1.5 transition-all cursor-pointer border border-border/40 ${
+                    copiedEmail
+                      ? "bg-green-500/15 text-green-400 border-green-500/30"
+                      : "hover:bg-primary/10 hover:text-primary text-muted-foreground"
+                  }`}
+                  title="Email cím másolása"
                 >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
+                  {copiedEmail ? (
+                    <>
+                      <Check className="w-3.5 h-3.5 text-green-400" />
+                      <span>{t.contact?.copied || "Másolva!"}</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-3.5 h-3.5" />
+                      <span>n.gabor90@gmail.com</span>
+                    </>
+                  )}
+                </button>
+              </div>
             </div>
           </div>
           {/* Right Column - Profile Image */}

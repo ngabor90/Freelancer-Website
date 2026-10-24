@@ -74,9 +74,11 @@
     "titleLine": "Weboldalak és alkalmazások",
     "titleHighlight": "amelyeket készítettem.",
     "description": "Freelance munkák és saját fejlesztések",
+    "featuredBadge": "Kiemelt projekt • Éles SaaS",
     "items": [
       {
         "title": "ShopList — Bevásárlólista app",
+        "featured": true,
         "description": "Full-stack bevásárlólista alkalmazás Laravel REST API háttérrel és React frontenddel, beléptetéssel, e-mail megerősítéssel és drag-and-drop lista-átrendezéssel. Éles környezetben fut a shoplist.hu címen.",
         "tags": ["Laravel", "React", "MySQL", "Sanctum"],
         "image": "/projects/shoplist.jpg",
@@ -209,6 +211,9 @@
       "error": "Az üzenet küldése sikertelen. Kérlek, próbáld újra később."
     },
     "infoTitle": "Elérhetőségek",
+    "copied": "Másolva!",
+    "copyBtn": "Másolás",
+    "copyTooltip": "Másolás vágólapra",
     "info": [
       {
         "label": "E-mail",

@@ -95,6 +95,14 @@ export const Projects = () => {
 
                 <div className="p-6 space-y-4 flex-1 flex flex-col justify-between">
                   <div className="space-y-4">
+                    {project.featured && (
+                      <div className="flex items-center">
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold tracking-wide">
+                          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                          {projects.featuredBadge}
+                        </span>
+                      </div>
+                    )}
                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                       {project.title}
                     </h3>

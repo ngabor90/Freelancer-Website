@@ -74,9 +74,11 @@
     "titleLine": "Websites and applications ",
     "titleHighlight": "I've built.",
     "description": "Freelance work and personal projects.",
+    "featuredBadge": "Featured • Live SaaS",
     "items": [
       {
         "title": "ShopList — Shopping List App",
+        "featured": true,
         "description": "A full-stack shopping list application with a Laravel REST API backend and React frontend, featuring authentication, email confirmation, and drag-and-drop list reordering. Live in production at shoplist.hu.",
         "tags": ["Laravel", "React", "MySQL", "Sanctum"],
         "image": "/projects/shoplist.jpg",
@@ -209,6 +211,9 @@
       "error": "Failed to send message. Please try again later."
     },
     "infoTitle": "Contact Info",
+    "copied": "Copied!",
+    "copyBtn": "Copy",
+    "copyTooltip": "Copy to clipboard",
     "info": [
       {
         "label": "Email",
