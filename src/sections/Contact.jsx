@@ -11,6 +11,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useLanguage } from "@/context/useLanguage";
 import { BookingWidget } from "@/components/BookingWidget";
+import { Reveal } from "@/components/Reveal";
 
 export const Contact = () => {
   const { t } = useLanguage();
@@ -100,25 +101,28 @@ export const Contact = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-            {contact.eyebrow}
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-            {contact.titleLine}{" "}
-            <span className="font-serif italic font-normal text-foreground">
-              {contact.titleHighlight}
+        <Reveal>
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
+              {contact.eyebrow}
             </span>
-          </h2>
-          <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            {contact.description}
-          </p>
-        </div>
+            <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground">
+              {contact.titleLine}{" "}
+              <span className="font-serif italic font-normal text-foreground">
+                {contact.titleHighlight}
+              </span>
+            </h2>
+            <p className="text-muted-foreground">
+              {contact.description}
+            </p>
+          </div>
+        </Reveal>
 
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 max-w-5xl mx-auto">
           {/* Form */}
-          <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300 order-1 lg:order-none lg:col-start-1 lg:row-start-1 lg:row-span-2">
-            <form className="space-y-6" onSubmit={handleSubmit}>
+          <Reveal delay={100} className="order-1 lg:order-none lg:col-start-1 lg:row-start-1 lg:row-span-2">
+            <div className="glass p-8 rounded-3xl border border-primary/30 h-full">
+              <form className="space-y-6" onSubmit={handleSubmit}>
               <input
                 type="text"
                 name="company"
@@ -253,54 +257,61 @@ export const Contact = () => {
               )}
             </form>
           </div>
+          </Reveal>
 
-          <div className="glass rounded-3xl p-8 border border-primary/30 animate-fade-in animation-delay-500 order-2 lg:order-none lg:col-start-1 lg:col-span-2 lg:row-start-3">
-            <h3 className="text-xl font-semibold mb-2">
-              {contact.bookingTitle}
-            </h3>
-            <p className="text-muted-foreground text-sm mb-6">
-              {contact.bookingText}
-            </p>
-            <BookingWidget />
-          </div>
+          <Reveal delay={200} className="order-3 lg:order-none lg:col-start-2 lg:row-start-1">
+            <div className="glass rounded-3xl p-8 border border-border/40 hover:border-primary/40 transition-colors h-full">
+              <h3 className="text-xl font-semibold mb-6">{contact.infoTitle}</h3>
+              <div className="space-y-4">
+                {contact.info.map((item, i) => {
+                  const Icon = contactIcons[i] ?? Mail;
 
-          <div className="glass rounded-3xl p-8 animate-fade-in animation-delay-400 order-3 lg:order-none lg:col-start-2 lg:row-start-1">
-            <h3 className="text-xl font-semibold mb-6">{contact.infoTitle}</h3>
-            <div className="space-y-4">
-              {contact.info.map((item, i) => {
-                const Icon = contactIcons[i] ?? Mail;
-
-                return (
-                  <a
-                    key={i}
-                    href={item.href}
-                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Icon className="w-5 h-5 text-primary" />
-                    </div>
-
-                    <div>
-                      <div className="text-sm text-muted-foreground">
-                        {item.label}
+                  return (
+                    <a
+                      key={i}
+                      href={item.href}
+                      className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group"
+                    >
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                        <Icon className="w-5 h-5 text-primary" />
                       </div>
-                      <div className="font-medium">{item.value}</div>
-                    </div>
-                  </a>
-                );
-              })}
-            </div>
-          </div>
 
-          <div className="glass rounded-3xl p-8 border border-primary/30 animate-fade-in animation-delay-400 order-4 lg:order-none lg:col-start-2 lg:row-start-2">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-              <span className="font-medium">{contact.availableTitle}</span>
+                      <div>
+                        <div className="text-sm text-muted-foreground">
+                          {item.label}
+                        </div>
+                        <div className="font-medium">{item.value}</div>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
             </div>
-            <p className="text-muted-foreground text-sm">
-              {contact.availableText}
-            </p>
-          </div>
+          </Reveal>
+
+          <Reveal delay={250} className="order-4 lg:order-none lg:col-start-2 lg:row-start-2">
+            <div className="glass rounded-3xl p-8 border border-primary/30 h-full">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                <span className="font-medium">{contact.availableTitle}</span>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                {contact.availableText}
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal delay={300} className="order-2 lg:order-none lg:col-start-1 lg:col-span-2 lg:row-start-3">
+            <div className="glass rounded-3xl p-8 border border-primary/30">
+              <h3 className="text-xl font-semibold mb-2">
+                {contact.bookingTitle}
+              </h3>
+              <p className="text-muted-foreground text-sm mb-6">
+                {contact.bookingText}
+              </p>
+              <BookingWidget />
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>

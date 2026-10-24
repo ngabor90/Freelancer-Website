@@ -9,13 +9,31 @@ export const Navbar = () => {
   const { t } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
+    const sectionIds = ["about", "projects", "experience", "testimonials", "contact"];
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      if (window.scrollY < 200) {
+        setActiveSection("");
+        return;
+      }
+
+      const scrollPosition = window.scrollY + 250;
+      for (let i = sectionIds.length - 1; i >= 0; i--) {
+        const el = document.getElementById(sectionIds[i]);
+        if (el && el.offsetTop <= scrollPosition) {
+          setActiveSection(sectionIds[i]);
+          return;
+        }
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -42,15 +60,23 @@ export const Navbar = () => {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-1">
           <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
-            {t.nav.links.map((link, index) => (
-              <a
-                href={link.href}
-                key={index}
-                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+            {t.nav.links.map((link, index) => {
+              const sectionId = link.href.replace("#", "");
+              const isActive = activeSection === sectionId;
+              return (
+                <a
+                  href={link.href}
+                  key={index}
+                  className={`px-4 py-2 text-sm rounded-full transition-all duration-300 ${
+                    isActive
+                      ? "bg-primary text-primary-foreground font-medium shadow-xs"
+                      : "text-muted-foreground hover:text-foreground hover:bg-surface"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
           </div>
         </div>
 
@@ -85,16 +111,24 @@ export const Navbar = () => {
           className="md:hidden glass-strong animate-fade-in"
         >
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
-            {t.nav.links.map((link, index) => (
-              <a
-                href={link.href}
-                key={index}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg text-muted-foreground hover:text-foreground py-2"
-              >
-                {link.label}
-              </a>
-            ))}
+            {t.nav.links.map((link, index) => {
+              const sectionId = link.href.replace("#", "");
+              const isActive = activeSection === sectionId;
+              return (
+                <a
+                  href={link.href}
+                  key={index}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`text-lg py-2 transition-colors ${
+                    isActive
+                      ? "text-primary font-semibold"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              );
+            })}
 
             <Button
               onClick={() => {

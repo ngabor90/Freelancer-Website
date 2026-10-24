@@ -23,10 +23,12 @@ export const IntroLoader = ({ onComplete }) => {
     timersRef.current.forEach(clearTimeout);
     timersRef.current = [];
 
+    document.body.style.overflow = originalOverflowRef.current;
     setIsExiting(true);
+
     const skipTimer = setTimeout(() => {
       finish();
-    }, 750);
+    }, 700);
     timersRef.current.push(skipTimer);
   }, [isExiting, finish]);
 
@@ -34,26 +36,57 @@ export const IntroLoader = ({ onComplete }) => {
     originalOverflowRef.current = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
-    const t1 = setTimeout(() => setStage(1), 120);
-    const t2 = setTimeout(() => setStage(2), 750);
-    const t3 = setTimeout(() => setStage(3), 1300);
-    const t4 = setTimeout(() => setIsExiting(true), 3800);
-    const t5 = setTimeout(() => finish(), 4700);
+    const t1 = setTimeout(() => setStage(1), 100);
+    const t2 = setTimeout(() => setStage(2), 550);
+    const t3 = setTimeout(() => setStage(3), 950);
+    const t4 = setTimeout(() => {
+      document.body.style.overflow = originalOverflowRef.current;
+      setIsExiting(true);
+    }, 2200);
+    const t5 = setTimeout(() => finish(), 2950);
 
     timersRef.current = [t1, t2, t3, t4, t5];
 
     const handleKeyDown = (e) => {
-      if (e.key === "Escape" || e.key === "Enter" || e.key === " ") {
+      if (
+        e.key === "Escape" ||
+        e.key === "Enter" ||
+        e.key === " " ||
+        e.key === "ArrowDown" ||
+        e.key === "PageDown"
+      ) {
+        handleSkip();
+      }
+    };
+
+    const handleWheel = (e) => {
+      if (Math.abs(e.deltaY) > 5) {
+        handleSkip();
+      }
+    };
+
+    let touchStartY = 0;
+    const handleTouchStart = (e) => {
+      touchStartY = e.touches[0].clientY;
+    };
+    const handleTouchMove = (e) => {
+      if (Math.abs(touchStartY - e.touches[0].clientY) > 10) {
         handleSkip();
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("wheel", handleWheel, { passive: true });
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
 
     return () => {
       timersRef.current.forEach(clearTimeout);
       timersRef.current = [];
       window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
       document.body.style.overflow = originalOverflowRef.current;
     };
   }, [finish, handleSkip]);
@@ -66,28 +99,32 @@ export const IntroLoader = ({ onComplete }) => {
       aria-label="Oldal betöltése"
       tabIndex={0}
       onClick={handleSkip}
-      className={`fixed inset-0 z-[9999] flex items-center justify-center cursor-pointer select-none overflow-hidden transition-transform duration-900 ${
-        isExiting ? "-translate-y-full" : "translate-y-0"
+      className={`fixed inset-0 flex items-center justify-center cursor-pointer select-none overflow-hidden transition-transform duration-750 ${
+        isExiting ? "-translate-y-full pointer-events-none" : "translate-y-0"
       }`}
       style={{
+        zIndex: 9999,
         backgroundColor: "var(--color-background, #0f1418)",
         transitionTimingFunction: "cubic-bezier(0.76, 0, 0.24, 1)",
       }}
     >
       <div
-        className={`absolute w-[450px] h-[450px] rounded-full pointer-events-none transition-opacity duration-1000 ${
+        className={`absolute rounded-full pointer-events-none transition-opacity duration-1000 ${
           stage >= 1 ? "opacity-30" : "opacity-0"
         }`}
         style={{
+          width: "420px",
+          height: "420px",
           background: "radial-gradient(circle, var(--color-primary, #6366f1) 0%, transparent 70%)",
           filter: "blur(50px)",
         }}
       />
 
       <div
-        className={`relative z-10 w-[92vw] max-w-[720px] px-4 transition-all duration-700 ${
+        className={`relative z-10 w-[92vw] px-4 transition-all duration-600 ${
           isExiting ? "scale-95 opacity-0" : "scale-100 opacity-100"
         }`}
+        style={{ maxWidth: "800px" }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -114,12 +151,12 @@ export const IntroLoader = ({ onComplete }) => {
               fontSize="82"
               fontWeight="700"
               letterSpacing="3"
-              className="fill-foreground font-sans transition-all duration-900 ease-out"
+              className="fill-foreground font-sans transition-all duration-700 ease-out"
               style={{
                 opacity: stage >= 1 ? 1 : 0,
                 transform: stage >= 1 ? "translateY(0)" : "translateY(16px)",
                 filter: stage >= 1 ? "blur(0px)" : "blur(8px)",
-                transition: "opacity 0.9s ease-out, transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), filter 0.9s ease-out",
+                transition: "opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.7s ease-out",
               }}
             >
               Németh{" "}
@@ -133,13 +170,13 @@ export const IntroLoader = ({ onComplete }) => {
               height="3"
               rx="1.5"
               fill="url(#lineGrad)"
-              className="transition-all duration-800 ease-out"
+              className="transition-all duration-600 ease-out"
               style={{
                 transformBox: "fill-box",
                 transformOrigin: "center",
                 transform: stage >= 2 ? "scaleX(1)" : "scaleX(0)",
                 opacity: stage >= 2 ? 1 : 0,
-                transition: "transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease-out",
+                transition: "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease-out",
               }}
             />
 
@@ -154,7 +191,7 @@ export const IntroLoader = ({ onComplete }) => {
                 opacity: stage >= 3 ? 0.9 : 0,
                 transform: stage >= 3 ? "translateY(0)" : "translateY(12px)",
                 filter: stage >= 3 ? "blur(0px)" : "blur(6px)",
-                transition: "opacity 0.9s ease-out, transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), filter 0.9s ease-out",
+                transition: "opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.7s ease-out",
               }}
             >
               Webfejlesztő
@@ -167,7 +204,7 @@ export const IntroLoader = ({ onComplete }) => {
             stage >= 3 ? "opacity-100" : "opacity-0"
           }`}
         >
-          Kattints az átugráshoz
+          Görgess vagy kattints az átugráshoz
         </p>
       </div>
     </aside>

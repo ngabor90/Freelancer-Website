@@ -10,7 +10,7 @@ export const BookingWidget = () => {
       const cal = await getCalApi();
       cal("ui", {
         theme: "auto",
-        styles: { branding: { brandColor: "#20b2a6" } },
+        styles: { branding: { brandColor: "#6366f1" } },
         hideEventTypeDetails: false,
       });
     })();
