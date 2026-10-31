@@ -2,6 +2,7 @@
   "nav": {
     "links": [
       { "href": "#about", "label": "Rólam" },
+      { "href": "#services", "label": "Szolgáltatások" },
       { "href": "#projects", "label": "Projektek" },
       { "href": "#experience", "label": "Tapasztalat" },
       { "href": "#testimonials", "label": "Vélemények" },
@@ -10,31 +11,30 @@
     "cta": "Kapcsolatfelvétel"
   },
   "hero": {
-    "badge": "Fullstack webfejlesztő • Szabad kapacitás",
-    "titleLine1": "Megbízható",
-    "titleLine2": "weboldalakat építek,",
-    "titleHighlight": "igényesen.",
-    "subtitle": "Szia, Németh Gábor vagyok — fullstack webfejlesztő, elsősorban Laravel és React háttérrel. Jelenleg szabad kapacitásom van, és szívesen vállalok weboldalakat, webalkalmazásokat HTML, CSS, JavaScript, React vagy Laravel technológiával, illetve ezeken kívül is nyitott vagyok más projektekre. Dolgozom project alapon és óradíjas konstrukcióban is, az árakról üzenetben egyeztessünk.",
+    "badge": "Freelance Fullstack Fejlesztő • Laravel & React",
+    "titleLine1": "Megbízható weboldalak,",
+    "titleLine2": "webalkalmazások",
+    "titleHighlight": "Laravel és React alapon.",
+    "subtitle": "Szia, Németh Gábor vagyok — freelance fullstack fejlesztő Budapesten, elsősorban Laravel és React fókusszal. Emellett készítek gyors, letisztult bemutatkozó weboldalakat HTML, CSS és JavaScript technológiákkal is, illetve nyitott vagyok egyedi megbízásokra. Dolgozom projekt és óradíjas konstrukcióban is.",
     "ctaPrimary": "Kapcsolatfelvétel",
-    "ctaSecondary": "Projectek megtekintése",
+    "ctaSecondary": "Projektek megtekintése",
     "followMe": "Elérhetőségeim:",
     "experienceLabel": "év tapasztalat freelancerként",
     "experienceValue": "2+",
     "availableBadge": "Jelenleg elérhető",
     "skillsLabel": "Technológiák, amikkel dolgozom",
     "skills": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Bootstrap",
-      "Laravel",
-      "React",
-      "Inertia.js",
-      "PHP",
-      "MySQL",
+      "HTML5",
+      "CSS3",
       "JavaScript",
       "TypeScript",
       "Tailwind CSS",
+      "Bootstrap",
+      "React",
+      "Inertia.js",
+      "PHP",
+      "Laravel",
+      "MySQL",
       "REST API",
       "Git"
     ]
@@ -68,6 +68,36 @@
         "description": "Fejlesztőként még mindig tanulok, kíváncsian az új eszközökre."
       }
     ]
+  },
+  "services": {
+    "eyebrow": "Szolgáltatások",
+    "titleLine": "Miben tudok",
+    "titleHighlight": "segíteni a vállalkozásodnak?",
+    "description": "Egyedi fejlesztési megoldások a letisztult bemutatkozó weboldalaktól a robusztus webalkalmazásokig és rendszerintegrációkig.",
+    "items": [
+      {
+        "title": "Laravel & React Webalkalmazások",
+        "description": "Összetett üzleti logikát megvalósító egyedi webes szoftverek, belső vállalatirányítási rendszerek, SaaS platformok és ügyfélkapuk fejlesztése Laravel REST API backenddel és modern React felülettel.",
+        "tags": ["Laravel", "React", "MySQL", "REST API", "Inertia.js"]
+      },
+      {
+        "title": "Egyedi Weboldal Készítés",
+        "description": "Gyors, reszponzív és letisztult vállalati bemutatkozó weboldalak, promóciós landing page-ek és portfóliók készítése HTML5, CSS3 és JavaScript technológiákkal, SEO-barát alapokkal.",
+        "tags": ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "Bootstrap"]
+      },
+      {
+        "title": "Webshop & API Rendszerintegrációk",
+        "description": "Webáruházak és szoftverek összekötése külső szolgáltatókkal: futárszolgálatok (GLS, FoxPost, MPL, Packeta), számlázóprogramok (Billingo, Számlázz.hu) és egyedi API interfészek megbízható bekötése.",
+        "tags": ["Packli SaaS tapasztalat", "GLS, FoxPost, MPL", "Billingo, Számlázz.hu", "UNAS, Shopify, WooCommerce"]
+      },
+      {
+        "title": "Karbantartás, Hibajavítás & Optimalizálás",
+        "description": "Meglévő weboldalak és webalkalmazások folyamatos karbantartása, legacy kód átvilágítása és javítása, Core Web Vitals sebességoptimalizálás projekt vagy óradíjas konstrukcióban.",
+        "tags": ["Hibajavítás", "Sebességoptimalizálás", "PHP refaktorálás", "Óradíjas elszámolás"]
+      }
+    ],
+    "ctaText": "Van egy projekted, amit szívesen megvalósítanál?",
+    "ctaButton": "Kérj ingyenes konzultációt"
   },
   "projects": {
     "eyebrow": "Kiemelt munkák",
@@ -237,6 +267,7 @@
     "tagline": "Freelancer Fullstack fejlesztő",
     "links": [
       { "href": "#about", "label": "Rólam" },
+      { "href": "#services", "label": "Szolgáltatások" },
       { "href": "#projects", "label": "Projektek" },
       { "href": "#experience", "label": "Tapasztalat" },
       { "href": "#testimonials", "label": "Vélemények" },

@@ -2,6 +2,7 @@
   "nav": {
     "links": [
       { "href": "#about", "label": "About" },
+      { "href": "#services", "label": "Services" },
       { "href": "#projects", "label": "Projects" },
       { "href": "#experience", "label": "Experience" },
       { "href": "#testimonials", "label": "Testimonials" },
@@ -10,11 +11,11 @@
     "cta": "Get in touch"
   },
   "hero": {
-    "badge": "Fullstack Web Developer • Open for Work",
-    "titleLine1": "Building reliable",
-    "titleLine2": "websites,",
-    "titleHighlight": "with care.",
-    "subtitle": "Hi, I'm Gábor Németh — a fullstack developer working mainly with Laravel and React. I currently have open capacity and I'm happy to take on websites and web applications in HTML, CSS, JavaScript, React, or Laravel, as well as other kinds of projects. I work on both a project and hourly basis, with rates discussed by message.",
+    "badge": "Freelance Fullstack Developer • Laravel & React",
+    "titleLine1": "Reliable websites,",
+    "titleLine2": "web applications",
+    "titleHighlight": "powered by Laravel & React.",
+    "subtitle": "Hi, I'm Gábor Németh — freelance fullstack developer based in Budapest, specializing in Laravel and React. I also craft clean, fast websites using HTML, CSS, and JavaScript, from small business showcases to complex SaaS systems. Available for project-based and hourly work.",
     "ctaPrimary": "Get in touch",
     "ctaSecondary": "View my projects",
     "followMe": "Find me on:",
@@ -23,18 +24,17 @@
     "availableBadge": "Currently available",
     "skillsLabel": "Technologies I work with",
     "skills": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Bootstrap",
-      "Laravel",
-      "React",
-      "Inertia.js",
-      "PHP",
-      "MySQL",
+      "HTML5",
+      "CSS3",
       "JavaScript",
       "TypeScript",
       "Tailwind CSS",
+      "Bootstrap",
+      "React",
+      "Inertia.js",
+      "PHP",
+      "Laravel",
+      "MySQL",
       "REST API",
       "Git"
     ]
@@ -68,6 +68,36 @@
         "description": "Still learning as a developer, always curious about new tools."
       }
     ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "titleLine": "How I can",
+    "titleHighlight": "help your business grow",
+    "description": "Tailored web development solutions ranging from clean showcase websites to complex web applications and system integrations.",
+    "items": [
+      {
+        "title": "Laravel & React Web Applications",
+        "description": "Custom business software, internal management tools, SaaS platforms, and client portals built with robust Laravel REST API backends and modern React interfaces.",
+        "tags": ["Laravel", "React", "MySQL", "REST API", "Inertia.js"]
+      },
+      {
+        "title": "Custom Website Development",
+        "description": "Fast, responsive, and modern business websites, promotional landing pages, and portfolios built with clean HTML5, CSS3, and JavaScript, following SEO best practices.",
+        "tags": ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "Bootstrap"]
+      },
+      {
+        "title": "E-commerce & API Integrations",
+        "description": "Automated integration of webshops and web apps with external services: courier platforms (GLS, FoxPost, MPL, Packeta), invoicing software (Billingo, Számlázz.hu), and custom REST APIs.",
+        "tags": ["Packli SaaS experience", "Courier APIs", "Invoicing APIs", "UNAS, Shopify, WooCommerce"]
+      },
+      {
+        "title": "Maintenance, Bug Fixing & Upgrades",
+        "description": "Reliable maintenance for existing websites and applications, legacy code refactoring, Core Web Vitals speed optimization, and building new features on a project or hourly basis.",
+        "tags": ["Bug fixing", "Speed optimization", "PHP refactoring", "Hourly rates available"]
+      }
+    ],
+    "ctaText": "Have a project in mind you'd like to build?",
+    "ctaButton": "Request a Consultation"
   },
   "projects": {
     "eyebrow": "Featured Work",
@@ -237,6 +267,7 @@
     "tagline": "Freelance Fullstack Developer",
     "links": [
       { "href": "#about", "label": "About" },
+      { "href": "#services", "label": "Services" },
       { "href": "#projects", "label": "Projects" },
       { "href": "#experience", "label": "Experience" },
       { "href": "#testimonials", "label": "Testimonials" },
