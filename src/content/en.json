@@ -6,6 +6,7 @@
       { "href": "#projects", "label": "Projects" },
       { "href": "#experience", "label": "Experience" },
       { "href": "#testimonials", "label": "Testimonials" },
+      { "href": "#faq", "label": "FAQ" },
       { "href": "#contact", "label": "Contact" }
     ],
     "cta": "Get in touch"
@@ -221,6 +222,40 @@
       }
     ]
   },
+  "faq": {
+    "eyebrow": "Frequently Asked Questions",
+    "titleLine": "Questions & Answers",
+    "titleHighlight": "about working together.",
+    "description": "Everything you need to know about technologies, pricing models, timelines, and the development process.",
+    "items": [
+      {
+        "question": "Which technologies do you work with, and how do you pick the right stack?",
+        "answer": "Depending on project goals: for clean, ultra-fast showcase and business websites, I use HTML5, CSS3, JavaScript, and Tailwind CSS. For complex business web applications, client portals, and SaaS platforms, I use Laravel (PHP) REST APIs paired with modern React frontends and reliable MySQL databases."
+      },
+      {
+        "question": "Do you work on a fixed-price project basis or hourly rates?",
+        "answer": "I offer both arrangements. For well-defined projects (showcase websites, landing pages, specific apps), I provide a transparent, upfront fixed-price quote. For ongoing development, system integrations, maintenance, and bug fixes, I work on an hourly rate."
+      },
+      {
+        "question": "Do you handle e-commerce and API integrations (couriers, invoicing)?",
+        "answer": "Yes, with hands-on SaaS platform experience at Packli, I connect online stores (Shopify, WooCommerce, UNAS) with external services including courier systems (GLS, FoxPost, MPL, Packeta), online invoicing (Billingo, Számlázz.hu), and custom REST APIs."
+      },
+      {
+        "question": "How long does it take to build a website or web application?",
+        "answer": "A responsive business website (HTML/CSS/JS) usually takes 1–2 weeks once content is finalized. A custom Laravel + React web application or API integration typically takes 3–6 weeks depending on feature complexity."
+      },
+      {
+        "question": "Do you provide post-launch maintenance and support?",
+        "answer": "Absolutely. I don't leave clients on their own after launch: I assist with domain and hosting configuration, security updates, Core Web Vitals speed optimization, and ongoing feature additions."
+      },
+      {
+        "question": "How do we get started working together?",
+        "answer": "The first step is a free, informal consultation (via email, phone, or a 15-minute Google Meet call on my calendar). We'll discuss your requirements, goals, and deadlines, followed by a detailed, personalized proposal."
+      }
+    ],
+    "ctaText": "Didn't find an answer to your question?",
+    "ctaButton": "Ask your question directly"
+  },
   "contact": {
     "eyebrow": "Get in Touch",
     "titleLine": "Let's build",
@@ -271,6 +306,7 @@
       { "href": "#projects", "label": "Projects" },
       { "href": "#experience", "label": "Experience" },
       { "href": "#testimonials", "label": "Testimonials" },
+      { "href": "#faq", "label": "FAQ" },
       { "href": "#contact", "label": "Contact" }
     ]
   },

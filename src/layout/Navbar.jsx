@@ -12,7 +12,7 @@ export const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    const sectionIds = ["about", "services", "projects", "experience", "testimonials", "contact"];
+    const sectionIds = ["about", "services", "projects", "experience", "testimonials", "faq", "contact"];
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);

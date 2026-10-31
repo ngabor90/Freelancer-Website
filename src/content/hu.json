@@ -6,6 +6,7 @@
       { "href": "#projects", "label": "Projektek" },
       { "href": "#experience", "label": "Tapasztalat" },
       { "href": "#testimonials", "label": "Vélemények" },
+      { "href": "#faq", "label": "GYIK" },
       { "href": "#contact", "label": "Kapcsolat" }
     ],
     "cta": "Kapcsolatfelvétel"
@@ -221,6 +222,40 @@
       }
     ]
   },
+  "faq": {
+    "eyebrow": "Gyakran Ismételt Kérdések",
+    "titleLine": "Kérdések és Válaszok",
+    "titleHighlight": "a közös munkáról.",
+    "description": "Minden fontos tudnivaló a technológiákról, az árazásról, a határidőkről és a fejlesztési folyamatról.",
+    "items": [
+      {
+        "question": "Milyen technológiákkal dolgozol és melyiket mikor ajánlod?",
+        "answer": "A projekt céljától és összetettségétől függően választom ki az ideális megoldást: letisztult, villámgyors bemutatkozó és céges weboldalakhoz tiszta HTML5, CSS3, JavaScript és Tailwind CSS technológiát használok. Összetettebb üzleti webalkalmazásokhoz, SaaS rendszerekhez és ügyfélkapukhoz a Laravel (PHP) REST API háttér és a React frontend párosát alkalmazom, megbízható MySQL adatbázissal."
+      },
+      {
+        "question": "Projekt alapon vagy óradíjban vállalsz megbízásokat?",
+        "answer": "Mindkét konstrukcióban dolgozom. Jól körülhatárolt új projektek (pl. bemutatkozó weboldal, landing page vagy konkrét webalkalmazás) esetén előre egyeztetett fix áras ajánlatot adok. Folyamatos fejlesztési megbízások, rendszerintegrációk, karbantartás és hibajavítás esetén átlátható óradíjas elszámolásban dolgozunk."
+      },
+      {
+        "question": "Vállalsz-e webshop és API integrációkat (GLS, FoxPost, számlázók)?",
+        "answer": "Igen, a Packli SaaS platformon és egyéb megbízásokon szerzett gyakorlati tapasztalattal vállalom webáruházak (pl. UNAS, Shopify, WooCommerce) és külső szolgáltatók automatizált összekötését. Legyen szó futárszolgálatokról (GLS, FoxPost, MPL, Packeta), online számlázókról (Billingo, Számlázz.hu) vagy egyedi REST API-król."
+      },
+      {
+        "question": "Mennyi idő alatt készül el egy weboldal vagy webalkalmazás?",
+        "answer": "Egy egyszerűbb, reszponzív bemutatkozó weboldal (HTML/CSS/JS) a tartalmak és igények egyeztetése után általában 1-2 hét alatt elkészül. Egy összetettebb, egyedi funkciókkal rendelkező Laravel + React webalkalmazás vagy API integráció jellemzően 3-6 hetet vesz igénybe a funkciók összetettségétől függően."
+      },
+      {
+        "question": "Segítesz a weboldal élesítése utáni karbantartásban és üzemeltetésben is?",
+        "answer": "Természetesen. Nem hagyom magukra az ügyfeleimet az átadás után sem: vállalom a domain- és tárhely-beállítást, a biztonsági frissítéseket, a sebességoptimalizálást (Core Web Vitals) és a későbbi funkcióbővítéseket is."
+      },
+      {
+        "question": "Hogyan indul a közös munka és a kapcsolatfelvétel?",
+        "answer": "Az első lépés egy kötetlen, ingyenes egyeztetés (e-mailben, telefonon vagy egy 15 perces Google Meet videóhívásban a naptáramon keresztül). Átbeszéljük az igényeket, a célokat és a határidőket, majd egy pontos, személyre szabott ajánlatot készítek."
+      }
+    ],
+    "ctaText": "Nem találtad a választ a kérdésedre?",
+    "ctaButton": "Tedd fel a kérdésed közvetlenül"
+  },
   "contact": {
     "eyebrow": "Vegyük fel a kapcsolatot",
     "titleLine": "Építsünk együtt",
@@ -271,6 +306,7 @@
       { "href": "#projects", "label": "Projektek" },
       { "href": "#experience", "label": "Tapasztalat" },
       { "href": "#testimonials", "label": "Vélemények" },
+      { "href": "#faq", "label": "GYIK" },
       { "href": "#contact", "label": "Kapcsolat" }
     ]
   },
